@@ -1,0 +1,359 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Nyas Braintech Milestone 4</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>*{box-sizing:border-box}html,body{margin:0;height:100%;background:#0b1526;overflow:hidden}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0}
+section{position:absolute;inset:0;width:1920px;height:1080px;display:none!important;overflow:hidden}section.on{display:flex!important}
+h1,h2,h3,p,ul,ol{margin:0}ul,ol{padding-left:36px}li{margin-bottom:6px}aside{display:none}
+table{border-collapse:collapse}th,td{padding:.35em .6em;border-bottom:1px solid #C9CCD1}
+#notes{position:fixed;left:0;right:0;bottom:0;max-height:30%;overflow:auto;background:#fff;color:#111;font:16px/1.4 Arial;padding:12px 16px;display:none}
+#hint{position:fixed;right:10px;bottom:8px;color:#9fb0c6;font:13px Arial}</style></head><body><div id="stage"><section id="cover" data-transition="fade" style="background:#12233F;color:#F7F6F1;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:32px;font-weight:600;color:#F2915F">Junior Academy Innovation Challenge · Milestone 4</p>
+<div style="display:flex;flex-direction:column;gap:32px">
+<h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:112px;font-weight:700;line-height:1.05;color:#F7F6F1">When can we trust the tools?</h1>
+<p style="font-size:44px;line-height:1.3;color:#C9D6E6;width:1400px">Testing the reliability of EEG sleep tracking and focused-ultrasound simulation for future sleep and anxiety research</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="font-size:32px;font-weight:600;color:#F7F6F1">Nyas Braintech</p>
+<p style="font-size:28px;color:#C9D6E6">[Student names] · Mentor: [Mentor name] · Team [number]</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#C9D6E6">Software-only research. No ultrasound was given to any person or animal.</p>
+<aside>Hi, we are Nyas Braintech. Brain-based tools for sleep and anxiety research sound exciting, but before anyone relies on them, we need to know when they can be trusted. That is the question behind our project. Everything we will show you is software: no ultrasound was given to anyone.</aside>
+</section>
+<section id="problem" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Problem</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Promising brain tools can be wrong and still look convincing</h2>
+</div>
+<div style="display:flex;gap:32px;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#E9EFF7;padding:40px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:600">The need</h3>
+<p style="font-size:32px;line-height:1.35">Sleep problems and anxiety affect daily life, health and learning.</p>
+<p style="font-size:32px;line-height:1.35;font-weight:600;color:#B84A1C">[Local statistic and source: sleep or anxiety in our community]</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#E9EFF7;padding:40px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:600">The opportunity</h3>
+<p style="font-size:32px;line-height:1.35">Researchers are studying low-intensity focused ultrasound (LIFU), a non-invasive way to target brain regions, and EEG can track sleep.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#12233F;color:#F7F6F1;padding:40px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:600;color:#F7F6F1">The gap</h3>
+<p style="font-size:32px;line-height:1.35;color:#F7F6F1">A sleep model can report high confidence when it is wrong. A simulation can give a precise number that depends on uncertain assumptions.</p>
+</div>
+</div>
+<aside>[Add your local statistic here and say where it comes from.] Sleep problems and anxiety affect many people. Researchers are exploring new tools, including EEG to track sleep and focused ultrasound to target brain regions. Before these tools can be used responsibly, we need to know when their answers can be trusted. That gap is what we tackled.</aside>
+</section>
+<section id="community" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Who this affects</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Researchers benefit first; communities could benefit later</h2>
+</div>
+<div style="display:flex;gap:24px;align-items:stretch">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#E9EFF7;padding:36px;border-radius:16px">
+<p style="font-size:28px;font-weight:600;color:#1F5FAD">Now</p>
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:600">Researchers</h3>
+<p style="font-size:30px;line-height:1.35">See when a model or simulation should not be trusted.</p>
+</div>
+<div class="arr" style="width:64px;flex:none;align-self:center;text-align:center;font-size:64px;color:#44546A">→</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#E9EFF7;padding:36px;border-radius:16px">
+<p style="font-size:28px;font-weight:600;color:#1F5FAD">Next</p>
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:600">Future studies</h3>
+<p style="font-size:30px;line-height:1.35">Could be better designed before anyone is exposed to ultrasound.</p>
+</div>
+<div class="arr" style="width:64px;flex:none;align-self:center;text-align:center;font-size:64px;color:#44546A">→</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#E9EFF7;padding:36px;border-radius:16px">
+<p style="font-size:28px;font-weight:600;color:#1F5FAD">Possibly, much later</p>
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:600">People and families</h3>
+<p style="font-size:30px;line-height:1.35">Could gain from better evidence, if future research succeeds.</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FBE9E0;padding:32px 40px;border-radius:16px">
+<p style="font-size:32px;font-weight:600;color:#8F3A15">[Our community: who we focused on, and what we heard from a researcher, clinician or community member]</p>
+</div>
+<aside>Our first users are researchers. Better reliability checks could help them design safer, more informed studies. People with sleep or anxiety problems could benefit much later, but only if future research succeeds. [Describe your community and include real feedback here. Only report conversations you actually had.]</aside>
+</section>
+<section id="eeg" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Background: EEG and sleep</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">EEG shows electrical patterns that change across sleep</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(5, 1fr);gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#E9EFF7;padding:28px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600">Wake</h3>
+<p style="font-size:28px;line-height:1.3">Faster activity; alpha waves with eyes closed</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FBE9E0;padding:28px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600">N1</h3>
+<p style="font-size:28px;line-height:1.3">Brief, light transition into sleep; theta waves</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#E9EFF7;padding:28px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600">N2</h3>
+<p style="font-size:28px;line-height:1.3">Sleep spindles and K-complexes</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#E9EFF7;padding:28px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600">N3</h3>
+<p style="font-size:28px;line-height:1.3">Deep sleep; large, slow delta waves</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#E9EFF7;padding:28px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600">REM</h3>
+<p style="font-size:28px;line-height:1.3">Dreaming stage; EEG can look like light sleep</p>
+</div>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600">Why it is hard</h3>
+<p style="font-size:30px;line-height:1.35">Stages blend into each other, N1 is short and rare, and brain signals differ from person to person.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600">Our data</h3>
+<p style="font-size:30px;line-height:1.35">Public Sleep-EDF recordings, with each 30-second epoch labelled by a human scorer.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#44546A">Sources: Kemp et al., 2000; Goldberger et al., 2000; AASM scoring manual (Berry et al.)</p>
+<aside>EEG measures electrical activity through the scalp. Sleep has five stages used in scoring, each with typical patterns. N1 is especially hard because it is brief and looks like its neighbours. We used public Sleep-EDF recordings, where a human scorer labelled every 30 seconds.</aside>
+</section>
+<section id="lifu" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Background: focused ultrasound</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">The skull makes it hard to know what reaches the target</h2>
+</div>
+<div style="display:flex;gap:48px;flex:1;align-items:center">
+<div style="flex:1;display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600">What LIFU is</h3>
+<p style="font-size:30px;line-height:1.35">Low-intensity sound waves focused on a small brain region from outside the head. It is still being studied.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600">The challenge</h3>
+<p style="font-size:30px;line-height:1.35">The skull reflects, absorbs and bends sound, and its properties vary. Published guidance describes skull absorption as considerably uncertain.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600">Why simulate</h3>
+<p style="font-size:30px;line-height:1.35">Simulation lets us test “what if” questions with no exposure to anyone, but its answers must be checked.</p>
+</div>
+</div>
+<div style="width:760px;display:flex;flex-direction:column;gap:16px;background:#12233F;padding:48px;border-radius:16px">
+<p style="font-size:30px;font-weight:600;color:#F2915F">Our simulated setup</p>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.2;color:#F7F6F1">500 kHz focused source through skin, a 3-layer skull and brain</p>
+<p style="font-size:28px;line-height:1.35;color:#C9D6E6">Tissue values and layers follow a published transcranial simulation benchmark, built here in 2D.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#44546A">Sources: ITRUSST practical guide (arXiv 2407.07646); Angla et al. (arXiv 2207.12026); Aubry et al., 2022</p>
+<aside>Low-intensity focused ultrasound aims sound waves at a small brain region from outside the head. Researchers are still studying its effects. A key difficulty is the skull, which reflects, absorbs and bends sound. Simulations help, because no one is exposed, but only if we check how much their answers can be trusted.</aside>
+</section>
+<section id="hypothesis" data-transition="fade" style="background:#12233F;color:#F7F6F1;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:48px">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:32px;font-weight:600;color:#F2915F">Hypothesis</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.2;color:#F7F6F1">A framework that measures uncertainty will reveal when EEG sleep models and ultrasound simulations become unreliable, and which factors matter most, better than headline accuracy alone.</h2>
+<aside>Our hypothesis is that measuring uncertainty tells us more than a single accuracy number. We expected to find specific conditions where these tools fail, and to identify the factors that matter most.</aside>
+</section>
+<section id="methods" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Methods</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Two tracks, one reliability question</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:30px;font-weight:600;color:#1F5FAD">EEG track</p>
+<div style="display:flex;gap:16px;align-items:stretch">
+<div style="flex:1;background:#E9EFF7;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">Sleep-EDF: 1 EEG channel</p></div>
+<div class="arr" style="width:40px;flex:none;align-self:center;text-align:center;font-size:40px;color:#44546A">→</div>
+<div style="flex:1;background:#E9EFF7;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">10 frequency-band features</p></div>
+<div class="arr" style="width:40px;flex:none;align-self:center;text-align:center;font-size:40px;color:#44546A">→</div>
+<div style="flex:1;background:#E9EFF7;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">Random forest vs simple baselines</p></div>
+<div class="arr" style="width:40px;flex:none;align-self:center;text-align:center;font-size:40px;color:#44546A">→</div>
+<div style="flex:1;background:#E9EFF7;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">Confidence and noise tests</p></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:30px;font-weight:600;color:#B84A1C">Acoustic track</p>
+<div style="display:flex;gap:16px;align-items:stretch">
+<div style="flex:1;background:#FBE9E0;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">2D layered virtual head</p></div>
+<div class="arr" style="width:40px;flex:none;align-self:center;text-align:center;font-size:40px;color:#44546A">→</div>
+<div style="flex:1;background:#FBE9E0;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">k-Wave beam simulation</p></div>
+<div class="arr" style="width:40px;flex:none;align-self:center;text-align:center;font-size:40px;color:#44546A">→</div>
+<div style="flex:1;background:#FBE9E0;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">Checks against exact solutions</p></div>
+<div class="arr" style="width:40px;flex:none;align-self:center;text-align:center;font-size:40px;color:#44546A">→</div>
+<div style="flex:1;background:#FBE9E0;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">Varying tissue properties</p></div>
+</div>
+</div>
+<div style="display:flex;gap:24px">
+<div style="flex:1;background:#12233F;padding:28px;border-radius:12px"><p style="font-size:28px;line-height:1.3;color:#F7F6F1"><b>Fair testing:</b> each person held out in turn, then a frozen model tested once on 3 new people</p></div>
+<div style="flex:1;background:#12233F;padding:28px;border-radius:12px"><p style="font-size:28px;line-height:1.3;color:#F7F6F1"><b>Joining the tracks:</b> a software-only test of how often a hypothetical trigger would be mistimed</p></div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#44546A">Tools: Python, scikit-learn, k-Wave (Treeby and Cox, 2010). Software only.</p>
+<aside>On the EEG side we extracted frequency features, trained a random forest and compared it with simple baselines. To test fairly, each person was held out in turn, and then we froze the model and tested it once on three new people. On the acoustic side we simulated a beam through a layered virtual head, checked the code against exact solutions, and varied tissue properties. Finally we joined the tracks with a software test of trigger timing.</aside>
+</section>
+<section id="classifier" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Results: blind test on 3 new people</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">It held up, but accuracy alone misleads</h2>
+</div>
+<div style="display:flex;gap:48px;align-items:flex-start">
+<img src="media/confusion.png" alt="Blind-test confusion matrix. Correct predictions: Wake 81 percent, N1 37 percent, N2 92 percent, N3 70 percent, REM 68 percent." style="width:720px;height:611px;object-fit:contain">
+<div style="flex:1;display:flex;flex-direction:column;gap:32px">
+<table style="font-size:28px;width:100%">
+<tr style="background:#12233F"><th style="width:58%;color:#F7F6F1;text-align:left">Blind test</th><th style="width:21%;color:#F7F6F1;text-align:center">Accuracy</th><th style="width:21%;color:#F7F6F1;text-align:center">Macro-F1</th></tr>
+<tr style="background:#E9EFF7"><td><b>Our random forest</b></td><td style="text-align:center"><b>79.8%</b></td><td style="text-align:center"><b>0.61</b></td></tr>
+<tr><td>Logistic regression</td><td style="text-align:center">75.5%</td><td style="text-align:center">0.60</td></tr>
+<tr><td>Always guess Wake</td><td style="text-align:center">75.7%</td><td style="text-align:center">0.17</td></tr>
+</table>
+<div style="display:flex;flex-direction:column;gap:12px;background:#E9EFF7;padding:28px;border-radius:16px">
+<p style="font-size:30px;line-height:1.3"><b>Wake vs sleep is much easier:</b> about 92% accuracy near sleep, using a cut-off taken from development data.</p>
+</div>
+<p style="font-size:30px;line-height:1.35"><b>N1 is the weak spot:</b> only 37% of N1 epochs were identified.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#44546A">5 development and 3 blind participants, same dataset. Cross-validation: 76.5% accuracy, macro-F1 0.55.</p>
+<aside>We froze the model and tested it once on three new people. It scored about 80% accuracy. But always guessing Wake scores about 76%, because people in these recordings spend so much time awake. So macro-F1, which treats all stages fairly, is a better measure, and it shows real skill. Our model and a simpler logistic regression were close. Just separating wake from sleep worked much better, at about 92% near sleep. The cut-off for that test was chosen on development data, after we saw the default cut-off underperform, so that one result is not strictly blind.</aside>
+</section>
+<section id="confidence" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Results: when confidence fails</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">With noisier EEG, the model grew more confident and less capable</h2>
+</div>
+<div style="display:flex;gap:48px;align-items:flex-start">
+<img src="media/noise.png" alt="Line chart. As noise increases from clean to 0 dB, mean confidence rises from 0.79 to 0.85 while macro-F1 falls from 0.56 to 0.21." style="width:880px;height:560px;object-fit:contain">
+<div style="flex:1;display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;color:#B84A1C">0.86 → 0.66</p>
+<p style="font-size:30px;line-height:1.3">Its ability to flag its own errors (AUC), from clean EEG to 0 dB</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#12233F;padding:32px;border-radius:16px">
+<p style="font-size:32px;line-height:1.3;font-weight:600;color:#F7F6F1">A confident answer is not always a good answer.</p>
+<p style="font-size:28px;line-height:1.3;color:#C9D6E6">Check signal quality before trusting the model.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#44546A">Random forest, leave-one-person-out on 5 participants, mean of 3 noise seeds. White noise is a simplified stress test.</p>
+<aside>This is one of our most important findings. We added noise to the EEG. Performance dropped from 0.56 to 0.21 macro-F1, but the model became more confident, not less. Its ability to spot its own mistakes also fell. So a model can fail silently, and that is why signal-quality checks need to come first.</aside>
+</section>
+<section id="beam" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Results: what reaches the target</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">About a third of the focal pressure remains</h2>
+</div>
+<div style="display:flex;gap:16px;width:1400px;align-self:center">
+<p style="flex:1;font-size:30px;font-weight:600">In water: focal pressure 1.00</p>
+<p style="flex:1;font-size:30px;font-weight:600">Through skin, skull and brain: 0.34</p>
+</div>
+<video src="media/beam_animation.mp4" poster="media/beam_still.png" aria-label="Animated simulation of a focused ultrasound beam. In water it forms a strong focus at the target. Through skin, skull and brain it is partly reflected and forms a much weaker focus." style="width:1400px;height:386px;object-fit:contain;align-self:center" autoplay loop muted playsinline></video>
+<div style="display:flex;gap:32px">
+<p style="flex:1;font-size:30px;line-height:1.3"><b>Treating the skull as one solid layer</b> overestimates focal pressure by about 50% (0.51 vs 0.34).</p>
+<p style="flex:1;font-size:30px;line-height:1.3"><b>Absorption matters:</b> without it, the 3-layer model gives 0.54.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#44546A">2D simulation, uncalibrated, 500 kHz. Pressure is relative to the same source in water. Not a safety or dose value.</p>
+<aside>Here is our simulated beam. On the left, in water, it builds a strong focus at the target, marked with a cross. On the right, it passes through skin, a three-layer skull and brain. Part of the wave bounces back, part is absorbed, and the focus is about one-third as strong. Modelling the skull as a single solid layer would overestimate this by about 50 percent. These are simulated relative values, not safety or dose values.</aside>
+</section>
+<section id="drivers" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Results: uncertainty and checks</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">Skull absorption and thickness matter most</h2>
+</div>
+<div style="display:flex;gap:48px;align-items:flex-start">
+<img src="media/drivers.png" alt="Bar chart of rank correlation with focal pressure: bone absorption minus 0.84, skull thickness minus 0.57, bone speed minus 0.28, bone density minus 0.28, brain speed plus 0.22." style="width:800px;height:519px;object-fit:contain">
+<div style="flex:1;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:700;color:#B84A1C">0.22–0.52</p>
+<p style="font-size:28px;line-height:1.3">Estimated range of focal pressure relative to water (5–95%), across assumed tissue ranges</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#E9EFF7;padding:28px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:32px;font-weight:600">How we checked our code</h3>
+<ul style="font-size:26px;line-height:1.3">
+<li>Layer transmission: within 0.5% of the exact solution</li>
+<li>2D focus: matched the analytic field</li>
+<li>Those checks caught a real bug in our code</li>
+</ul>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#44546A">19 of 32 samples finished. Unfinished samples had more absorption, so the range uses a fit to all 32 inputs (raw: 0.25–0.58).</p>
+<aside>We varied tissue properties together across ranges we assumed around published values. Bone absorption and skull thickness had the largest effect. The estimated focal pressure ranged from about 0.22 to 0.52 of the water value. We stopped early with 19 of 32 samples, and because the unfinished ones had more absorption, this range comes from a fitted estimate. We also checked our code against exact solutions, and those checks caught a real bug. Testing against known answers really matters.</aside>
+</section>
+<section id="gating" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Results: bringing EEG and LIFU together in software</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">Would a sleep-triggered system fire at the right time?</h2>
+</div>
+<table style="font-size:30px;width:100%">
+<tr style="background:#12233F"><th style="width:52%;color:#F7F6F1;text-align:left">Hypothetical trigger rule (blind test)</th><th style="width:16%;color:#F7F6F1;text-align:center">Precision</th><th style="width:14%;color:#F7F6F1;text-align:center">Recall</th><th style="width:18%;color:#F7F6F1;text-align:center">Fired in Wake</th></tr>
+<tr><td>N2, no filter</td><td style="text-align:center">0.65</td><td style="text-align:center">0.92</td><td style="text-align:center">19.1%</td></tr>
+<tr style="background:#E9EFF7"><td><b>N2, confidence ≥ 0.7 and 3 epochs in a row</b></td><td style="text-align:center"><b>0.94</b></td><td style="text-align:center"><b>0.55</b></td><td style="text-align:center"><b>0.2%</b></td></tr>
+<tr><td>N3, no filter</td><td style="text-align:center">0.87</td><td style="text-align:center">0.70</td><td style="text-align:center">6.9%</td></tr>
+</table>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:34px;font-weight:600">Filters help, at a cost</h3><p style="font-size:28px;line-height:1.3">Better timing means missing more of the target stage.</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:34px;font-weight:600">People differ</h3><p style="font-size:28px;line-height:1.3">N3 precision was only 0.27 in our 5 development participants.</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:34px;font-weight:600">Noise removes triggers</h3><p style="font-size:28px;line-height:1.3">N2 recall fell from 0.82 to 0.22 at 5 dB (development data).</p></div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#44546A">Simulated timing only. N2 and N3 are examples; this work does not support targeting any sleep stage. Nothing was delivered to anyone.</p>
+<aside>Here we joined the two tracks. Imagine a system that only triggers during a chosen sleep stage. How often would it fire at the wrong time? Adding a confidence filter and requiring three epochs in a row greatly reduced mistimed triggers, but also missed more of the stage. Results also varied between people. N2 and N3 are only examples. This is a timing test in software, and it says nothing about any effect of ultrasound on sleep.</aside>
+</section>
+<section id="solution" data-transition="fade" style="background:#12233F;color:#F7F6F1;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#F2915F">Our solution and its impact</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.15;color:#F7F6F1">A reliability-testing framework that shows when to trust these tools, before any human use</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;flex:1">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1F3556;padding:32px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600;color:#F7F6F1">What is new</h3>
+<p style="font-size:28px;line-height:1.35;color:#F7F6F1">It tests classifier confidence and acoustic uncertainty together, including how often timing would go wrong.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#1F3556;padding:32px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600;color:#F7F6F1">Positive impact</h3>
+<p style="font-size:28px;line-height:1.35;color:#F7F6F1">Helps researchers find weak points earlier, with no exposure to ultrasound. It uses software and public data, so it can scale at low cost.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#1F3556;padding:32px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600;color:#F7F6F1">Risks we must manage</h3>
+<p style="font-size:28px;line-height:1.35;color:#F7F6F1">Simulated numbers could be misread as safe doses, and small datasets may not represent everyone.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#C9D6E6">It runs on existing technology today. Any clinical use would need far more validation, plus safety and ethics review.</p>
+<aside>Our solution is a reliability-testing framework. It helps researchers see when these tools can be trusted, before any human use. What makes it new is testing classifier confidence and acoustic uncertainty together. Because it is software built on public data, it can be shared and scaled at low cost. We also take the risks seriously: simulated numbers must never be mistaken for safe doses, and small datasets may not represent everyone.</aside>
+</section>
+<section id="limits" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Limits and next steps</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">What we know, and what we still need to test</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FBE9E0;padding:36px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600">Limits</h3>
+<ul style="font-size:28px;line-height:1.35">
+<li>8 people from one dataset</li>
+<li>2D head model, uncalibrated pressures</li>
+<li>Finest grid and 3D benchmark not finished</li>
+<li>Not experimentally or clinically validated</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#E9EFF7;padding:36px;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600">Next steps</h3>
+<ul style="font-size:28px;line-height:1.35">
+<li>Test about 20 more participants</li>
+<li>Add signal-quality screening and real artefacts</li>
+<li>Finish the published benchmark comparison</li>
+<li>Vary skull shape and add community input</li>
+</ul>
+</div>
+</div>
+<div style="background:#12233F;padding:36px 44px;border-radius:16px">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:600;line-height:1.25;color:#F7F6F1">Before we ask whether a tool can help people, we need to know when it can’t be trusted.</p>
+</div>
+<aside>Our work has clear limits. We tested only eight people from one dataset, used a 2D head model, and did not finish the finest grid or the 3D benchmark. Nothing here is clinically validated. Next, we would test more participants, add signal-quality checks, finish the benchmark and gather community input. Our main message is this: before we ask whether a tool can help people, we need to know when it can’t be trusted. Thank you.</aside>
+</section>
+<section id="refs" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:32px">
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">References</h2>
+<ol style="font-size:26px;line-height:1.3">
+<li>Aubry J-F, et al. Benchmark problems for transcranial ultrasound simulation: intercomparison of compressional wave models. J Acoust Soc Am. 2022;152(2):1003–1019.</li>
+<li>Kemp B, et al. Analysis of a sleep-dependent neuronal feedback loop: the slow-wave microcontinuity of the EEG. IEEE Trans Biomed Eng. 2000;47(9):1185–1194.</li>
+<li>Goldberger AL, et al. PhysioBank, PhysioToolkit, and PhysioNet. Circulation. 2000;101(23):e215–e220.</li>
+<li>Treeby BE, Cox BT. k-Wave: MATLAB toolbox for the simulation and reconstruction of photoacoustic wave fields. J Biomed Opt. 2010;15(2):021314.</li>
+<li>ITRUSST Consortium. A practical guide to transcranial ultrasonic stimulation. arXiv:2407.07646.</li>
+<li>Angla C, et al. Transcranial ultrasound simulations: a review. arXiv:2207.12026.</li>
+<li>Berry RB, et al. The AASM Manual for the Scoring of Sleep and Associated Events. American Academy of Sleep Medicine.</li>
+<li>[Our local sleep or anxiety statistics source]</li>
+</ol>
+<aside>Reference slide. Team: open and check each source before submission, and add your local statistics source.</aside>
+</section>
+</div><div id="notes"></div><div id="hint"></div>
+<script>var s=[].slice.call(document.querySelectorAll("section")),i=Math.max(0,(parseInt(location.hash.slice(1))||1)-1),st=document.getElementById("stage"),n=document.getElementById("notes"),h=document.getElementById("hint");
+function fit(){var k=Math.min(document.documentElement.clientWidth/1920,document.documentElement.clientHeight/1080)||0.5;st.style.transform="scale("+k+") translate(-50%,-50%)"}
+function show(){s.forEach(function(e,j){e.classList.toggle("on",j==i)});var a=s[i].querySelector("aside");n.textContent=a?a.textContent:"";h.textContent=(i+1)+" / "+s.length+"  |  arrows: move, N: notes";location.hash=i+1}
+addEventListener("resize",fit);addEventListener("keydown",function(e){if(e.key=="ArrowRight"||e.key==" "||e.key=="PageDown")i=Math.min(i+1,s.length-1);else if(e.key=="ArrowLeft"||e.key=="PageUp")i=Math.max(i-1,0);else if(e.key=="n"||e.key=="N"){n.style.display=n.style.display=="block"?"none":"block";return}else return;show()});
+document.addEventListener("click",function(e){if(e.target.tagName!="VIDEO"){i=Math.min(i+1,s.length-1);show()}});addEventListener("load",fit);new ResizeObserver(fit).observe(document.documentElement);fit();show()</script></body></html>

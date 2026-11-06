@@ -1,0 +1,21 @@
+<section id="confidence" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Results: when confidence fails</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">With noisier EEG, the model grew more confident and less capable</h2>
+</div>
+<div style="display:flex;gap:48px;align-items:flex-start">
+<img src="/_blob/9fdc2b5cc9c48c778e7c31e2e033518d" alt="Line chart. As noise increases from clean to 0 dB, mean confidence rises from 0.79 to 0.85 while macro-F1 falls from 0.56 to 0.21." style="width:880px;height:560px;object-fit:contain">
+<div style="flex:1;display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;color:#B84A1C">0.86 → 0.66</p>
+<p style="font-size:30px;line-height:1.3">Its ability to flag its own errors (AUC), from clean EEG to 0 dB</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#12233F;padding:32px;border-radius:16px">
+<p style="font-size:32px;line-height:1.3;font-weight:600;color:#F7F6F1">A confident answer is not always a good answer.</p>
+<p style="font-size:28px;line-height:1.3;color:#C9D6E6">Check signal quality before trusting the model.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#44546A">Random forest, leave-one-person-out on 5 participants, mean of 3 noise seeds. White noise is a simplified stress test.</p>
+<aside>This is one of our most important findings. We added noise to the EEG. Performance dropped from 0.56 to 0.21 macro-F1, but the model became more confident, not less. Its ability to spot its own mistakes also fell. So a model can fail silently, and that is why signal-quality checks need to come first.</aside>
+</section>

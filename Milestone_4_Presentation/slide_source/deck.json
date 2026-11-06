@@ -1,0 +1,20 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-11-03T15:50:00Z"},
+  "lists": "css",
+  "title": "Nyas Braintech Milestone 4",
+  "cover": "cover",
+  "order": ["cover", "problem", "community", "eeg", "lifu", "hypothesis", "methods", "classifier", "confidence", "beam", "drivers", "gating", "solution", "limits", "refs"],
+  "sections": {
+    "s1": {"description": "The problem and who it affects", "start": "cover"},
+    "s2": {"description": "Background and hypothesis", "start": "eeg"},
+    "s3": {"description": "How we tested it", "start": "methods"},
+    "s4": {"description": "What we found", "start": "classifier"},
+    "s5": {"description": "Our solution, its limits and what comes next", "start": "solution"}
+  },
+  "faces": {
+    "space-grotesk": {"family": "Space Grotesk", "href": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap"},
+    "ibm-plex-sans": {"family": "IBM Plex Sans", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"}
+  },
+  "designSystems": []
+}

@@ -1,0 +1,10 @@
+case,dx_mm,analytic_transmission,simulated_transmission,error_pct
+"6.5 mm cortical, no absorption, water both sides",0.25,0.5982520814921477,0.5962497563210148,-0.3346958971105792
+"6.5 mm cortical, no absorption, water both sides",0.125,0.5982520814921477,0.5977868980702189,-0.07775709208876544
+"6.5 mm cortical, no absorption, water both sides",0.0625,0.5982520814921477,0.598136472448741,-0.01932446989876475
+"6.5 mm cortical, absorbing, water both sides",0.25,0.48042815957234786,0.4824211666030293,0.4148397613610992
+"6.5 mm cortical, absorbing, water both sides",0.125,0.48042815957234786,0.4827794168567137,0.4894087154380848
+"6.5 mm cortical, absorbing, water both sides",0.0625,0.48042815957234786,nan,nan
+"skin + 3-layer skull, absorbing, into brain",0.25,0.4050158494037232,0.4043466251766373,-0.1652340835725767
+"skin + 3-layer skull, absorbing, into brain",0.125,0.4050158494037232,0.4031742802664872,-0.45469063493371986
+"skin + 3-layer skull, absorbing, into brain",0.0625,0.4050158494037232,nan,nan

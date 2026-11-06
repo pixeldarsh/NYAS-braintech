@@ -1,0 +1,17 @@
+# Local environments and app settings
+.venv*/
+.claude/
+__pycache__/
+.DS_Store
+
+# Raw data: download again with download_data.py (Sleep-EDF, PhysioNet)
+sleep_edf/
+sleep_edf_blind/
+
+# Large generated files: rebuild with preprocesseeg.py and blind_test.py
+eeg_epochs.npy
+frozen_rf.joblib
+
+# NYAS's own blank template and instructions (not ours to republish)
+None-Junior_Academy_Milestone_3_-_TEMPLATE.docx
+None-Junior_Academy_Milestone_4_-_INSTRUCTIONS.docx

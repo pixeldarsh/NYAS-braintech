@@ -1,0 +1,19 @@
+subject,target,policy,triggers,true_target,in_wake,target_epochs
+SC4051E0,N2,argmax,493,207,209,217
+SC4051E0,N2,conf >= 0.7,232,193,5,217
+SC4051E0,N2,"conf >= 0.7, 3 consecutive",160,144,0,217
+SC4051E0,N3,argmax,92,70,21,135
+SC4051E0,N3,conf >= 0.7,38,38,0,135
+SC4051E0,N3,"conf >= 0.7, 3 consecutive",3,3,0,135
+SC4061E0,N2,argmax,414,360,2,407
+SC4061E0,N2,conf >= 0.7,332,302,1,407
+SC4061E0,N2,"conf >= 0.7, 3 consecutive",219,202,1,407
+SC4061E0,N3,argmax,99,99,0,136
+SC4061E0,N3,conf >= 0.7,80,80,0,136
+SC4061E0,N3,"conf >= 0.7, 3 consecutive",60,60,0,136
+SC4071E0,N2,argmax,552,377,68,403
+SC4071E0,N2,conf >= 0.7,372,326,1,403
+SC4071E0,N2,"conf >= 0.7, 3 consecutive",226,220,0,403
+SC4071E0,N3,argmax,156,133,3,162
+SC4071E0,N3,conf >= 0.7,114,104,0,162
+SC4071E0,N3,"conf >= 0.7, 3 consecutive",65,65,0,162

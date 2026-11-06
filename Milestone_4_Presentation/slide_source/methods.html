@@ -1,0 +1,36 @@
+<section id="methods" data-transition="fade" style="background:#F7F6F1;color:#12233F;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:28px;font-weight:600;color:#B84A1C">Methods</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Two tracks, one reliability question</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:30px;font-weight:600;color:#1F5FAD">EEG track</p>
+<div style="display:flex;gap:16px;align-items:stretch">
+<div style="flex:1;background:#E9EFF7;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">Sleep-EDF: 1 EEG channel</p></div>
+<x-shape kind="arrow-right" style="width:40px;height:24px;background:#44546A;align-self:center;flex:none"></x-shape>
+<div style="flex:1;background:#E9EFF7;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">10 frequency-band features</p></div>
+<x-shape kind="arrow-right" style="width:40px;height:24px;background:#44546A;align-self:center;flex:none"></x-shape>
+<div style="flex:1;background:#E9EFF7;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">Random forest vs simple baselines</p></div>
+<x-shape kind="arrow-right" style="width:40px;height:24px;background:#44546A;align-self:center;flex:none"></x-shape>
+<div style="flex:1;background:#E9EFF7;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">Confidence and noise tests</p></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:30px;font-weight:600;color:#B84A1C">Acoustic track</p>
+<div style="display:flex;gap:16px;align-items:stretch">
+<div style="flex:1;background:#FBE9E0;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">2D layered virtual head</p></div>
+<x-shape kind="arrow-right" style="width:40px;height:24px;background:#44546A;align-self:center;flex:none"></x-shape>
+<div style="flex:1;background:#FBE9E0;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">k-Wave beam simulation</p></div>
+<x-shape kind="arrow-right" style="width:40px;height:24px;background:#44546A;align-self:center;flex:none"></x-shape>
+<div style="flex:1;background:#FBE9E0;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">Checks against exact solutions</p></div>
+<x-shape kind="arrow-right" style="width:40px;height:24px;background:#44546A;align-self:center;flex:none"></x-shape>
+<div style="flex:1;background:#FBE9E0;padding:24px;border-radius:12px"><p style="font-size:26px;line-height:1.25">Varying tissue properties</p></div>
+</div>
+</div>
+<div style="display:flex;gap:24px">
+<div style="flex:1;background:#12233F;padding:28px;border-radius:12px"><p style="font-size:28px;line-height:1.3;color:#F7F6F1"><b>Fair testing:</b> each person held out in turn, then a frozen model tested once on 3 new people</p></div>
+<div style="flex:1;background:#12233F;padding:28px;border-radius:12px"><p style="font-size:28px;line-height:1.3;color:#F7F6F1"><b>Joining the tracks:</b> a software-only test of how often a hypothetical trigger would be mistimed</p></div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#44546A">Tools: Python, scikit-learn, k-Wave (Treeby and Cox, 2010). Software only.</p>
+<aside>On the EEG side we extracted frequency features, trained a random forest and compared it with simple baselines. To test fairly, each person was held out in turn, and then we froze the model and tested it once on three new people. On the acoustic side we simulated a beam through a layered virtual head, checked the code against exact solutions, and varied tissue properties. Finally we joined the tracks with a software test of trigger timing.</aside>
+</section>
